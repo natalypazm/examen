@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>examen</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+</head>
+<style>
+	*{
+		background-color:#33373e;
+	}
+	.nuevo-color{
+		border:1px solid transparent;
+		height:150px;
+		margin:0 5px;
+	}
+	.seleccion{
+		text-align:center;
+		margin:20px 0;
+	}
+	.option{
+		height:40px;
+		width:40px;
+		border-radius:100%;
+		border:1px solid #fff;
+		display:inline-block;
+	}
+	.option-1{
+		background-color:#eb2d48;
+		border-color:#eb2d48;
+	}
+	.option-2{
+		background-color:#4f9cf9;
+		border-color:#4f9cf9;
+	}
+	.option-3{
+		background-color:#e5d13a;
+		border-color:#e5d13a;
+	}
+	button{
+		border:none;
+		outline:0px;
+	}
+	.button{
+		text-align:center;
+	}
+	.add-color{
+		background-color: #64b755;
+		border-radius:5px;
+		border:1px solid #64b755 ;
+		color:#fff;
+		font-weight:bold;
+		padding:10px 30px;
+		margin:10px 0;
+	}
+</style>
+<body>
+	<div class="container-fluid">
+		<div class="row nuevo-color"></div>
+		<div class="row seleccion">
+			<button class="a" onclick="change()"><div class="option option-1"></div></button> 
+ 			<button onclick="change2()"><div class="option option-2"></div></button>
+			<button onclick="change3()"><div class="option option-3"></div></button>
+			<!--<button><div class="option option-new hidden"></div></button>-->
+		</div>
+		<div class="row button">
+			<button class="add-color">New Color</button>
+		</div>
+	</div>
+</body>
+<script  type="text/javascript">
+	console.log(nuevo);
+	function change(){
+		$(".nuevo-color").css("background-color","#eb2d48");
+	}
+	function change2(){
+		$(".nuevo-color").css("background-color","#4f9cf9");
+	}
+	function change3(){
+		$(".nuevo-color").css("background-color","#e5d13a");
+	}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</html> 
